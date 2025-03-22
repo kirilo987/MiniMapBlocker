@@ -1,0 +1,25 @@
+name: Mini-Map-Blocking
+version: '1.0-SNAPSHOT'
+main: org.kxysl1k.miniMapBlocking.MiniMapBlocking
+api-version: '1.21'
+prefix: [ ModsBlock ]
+load: STARTUP
+authors: [ Kxysl1k ]
+description: Plugin By Kxysl1k
+website: https://kxysl1k.netlify.app/
+
+commands:
+  mmreload:
+    description: Перезавантажити конфіга плагіна
+    permission: minimapblock.reload
+  mmcheck:
+    description: Перевірити моди гравця
+    permission: minimapblock.check
+
+permissions:
+  minimapblock.reload:
+    description: Дозвіл на перезавантаження конфіга
+    default: op
+  minimapblock.check:
+    description: Дозвіл на перевірку модів гравця
+    default: op
